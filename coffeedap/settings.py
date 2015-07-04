@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import ipdb
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MAIN_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MAIN_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'coffeedap.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(MAIN_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -111,13 +112,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATES_DIRS =(
-    os.path.join(MAIN_DIR, 'templates'),
-    )
-
 STATICFILES_DIRS =(
     os.path.join(MAIN_DIR, 'static'),
     )
 
+#ipdb.set_trace()
 
 
