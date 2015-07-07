@@ -48,30 +48,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">P E T R O R E C R U I T</a>
+                <a class="navbar-brand page-scroll" href="/">P E T R O R E C R U I T</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">How It Works</a>
-                    </li>
-                   <!--  <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li> -->
-                    <li>
-                        <a class="page-scroll" href="#team">Our Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Get Invited</a>
-                    </li>
+
+                    {% block navigation %}
+
+                     <li class="hidden">
+                     <a href="#page-top"></a>
+                     </li>
+                     <li>
+                     <a class="page-scroll" href="#services">How It Works</a>
+                     </li>
+                     <li>
+                     <a class="page-scroll" href="#team">Our Team</a>
+                     </li>
+                     <li>
+                     <a class="page-scroll" href="#contact">Get Invited</a>
+                     </li>
+
+ {% endblock %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -79,6 +78,7 @@
         <!-- /.container-fluid -->
     </nav>
 
+{% block main_content %}
     <!-- Header -->
     <header>
         <div class="container">
@@ -426,6 +426,8 @@
             </div>
         </div>
     </section>
+
+{% endblock %}
 
     <footer>
         <div class="container">
