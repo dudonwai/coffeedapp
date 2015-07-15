@@ -52,7 +52,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'core',
     'widget_tweaks',
-    #'sitegate',
+    'sitegate',
     'bootstrap3',
     'bootstrap_pagination',
 )
@@ -162,4 +162,8 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWSAccessKeyId')
 
 AWS_STORAGE_BUCKET_NAME = 'petrorecruit'
 
+
+import sitegate
+print sitegate
+print sitegate.__file__
 
