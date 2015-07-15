@@ -52,7 +52,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'core',
     'widget_tweaks',
-    'sitegate',
+    #'sitegate',
     'bootstrap3',
     'bootstrap_pagination',
 )
