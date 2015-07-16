@@ -163,7 +163,4 @@ AWS_ACCESS_KEY_ID = os.environ.get('AWSAccessKeyId')
 AWS_STORAGE_BUCKET_NAME = 'petrorecruit'
 
 
-import sitegate
-print sitegate
-print sitegate.__file__
 
